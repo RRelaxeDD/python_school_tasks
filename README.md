@@ -30,7 +30,7 @@ print('123')
 print(1.23)
 ```
 ### Результат.
-![Меню](https://github.com/RRelaxeDD/python_school_tasks/pic/lab1/demo.png)
+![Меню](https://github.com/RRelaxeDD/python_school_tasks/pic/demo.png)
 
 ## Выводы
 
