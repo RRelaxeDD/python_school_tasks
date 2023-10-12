@@ -31,7 +31,7 @@ print(1.23)
 ```
 
 ### Результат.
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/main/pic/lab/ex1.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_2/pic/lab/ex1.png)
 
 ## Выводы
 
@@ -52,7 +52,7 @@ print(3 + 7.04 + 1 + 2.33)
 ```
 
 ### Результат.
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/main/pic/lab/ex2.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_2/pic/lab/ex2.png)
  
  
 ### 3) Выведите в консоль три строки. Первая – обычная строка. Вторая – F строка с использованием заранее объявленной переменной. Третья – сложите две или более строк в одну.
@@ -70,7 +70,7 @@ print(one + two)
 
 
 ### Результат.
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/main/pic/lab/ex3.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_2/pic/lab/ex3.png)
 
 ### 4) Выведите в консоль три строки. Первая – трансформация любого типа переменной в bool. Вторая – трансформация любого типа переменной в float или int. Третья – трансформация любого типа переменной в str. 
  
@@ -85,7 +85,7 @@ print(str(three))
 
 
 ### Результат.
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/main/pic/lab/ex4.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_2/pic/lab/ex4.png)
  
 ### 5) Присвойте трем переменным различные значения, воспользовавшись функцией input() 
 
@@ -98,7 +98,7 @@ print(one, two, three)
 
 
 ### Результат.
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/main/pic/lab/ex5.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_2/pic/lab/ex5.png)
 
 ### 6) Создайте две любые числовые переменные и выполните над ними несколько математических операций: возведение в степень, обычное деление, целочисленное деление, нахождение остатка от деления. При желании вы можете проверить как работают эти вычисления с разными типами данных, например, сначала создать две переменные int, затем создать две переменные float и наконец создать переменные типа int и float и провести над ними операции, прописанные выше.
 
@@ -113,7 +113,7 @@ print(f"нахождение остатка от деления: {a%b}")
 
 
 ### Результат.
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/main/pic/lab/ex6.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_2/pic/lab/ex6.png)
  
  
 ### 7) Создайте любую строковую переменную и произведите над ней математическое действие умножение на любое число. 
@@ -125,7 +125,7 @@ print(line * 6)
 
 
 ### Результат.
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/main/pic/lab/ex7.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_2/pic/lab/ex7.png)
 
 
 ### 8) Посчитайте сколько раз символ ‘o’ встречается в строке ‘Hello World’. 
@@ -137,7 +137,7 @@ print(sentenct.count("o"))
 
 
 ### Результат.
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/main/pic/lab/ex8.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_2/pic/lab/ex8.png)
  
 ### 9) Напишите предложение ‘Hello World’ в две строки. Написанная программа должна занимать одну строку в редакторе кода. 
 
@@ -147,7 +147,7 @@ print("hello\nworld")
 
 
 ### Результат.
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/main/pic/lab/ex9.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_2/pic/lab/ex9.png)
  
 ### 10) Из предложения ‘Hello World’ выведите в консоль только 2 символ, а затем выведите слово ‘Hello’ 
 
@@ -158,7 +158,7 @@ print(sentence[:5])
 ```
 
 ### Результат.
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/main/pic/lab/ex10.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_2/pic/lab/ex10.png)
 
 ## Самостоятельная работа №2
 - Текст задания
