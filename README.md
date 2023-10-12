@@ -29,8 +29,10 @@ print(123)
 print('123')
 print(1.23)
 ```
+
+
 ### Результат.
-![Меню](https://github.com/RRelaxeDD/python_school_tasks/pic/demo.png)
+![Меню](https://github.com/RRelaxeDD/python_school_tasks/blob/main/pic/demo.png)
 
 ## Выводы
 
