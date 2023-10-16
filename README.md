@@ -1,20 +1,18 @@
-
-
 - Ячменев Иван михайлович
 - ОЗИВТ-21-1-у
 
 | Задание | Лаб_раб | Сам_раб |
 | ------ | ------ | ------ |
-| Задание 1 | - | - |
-| Задание 2 | - | - |
-| Задание 3 | - | - |
-| Задание 4 | - | - |
-| Задание 5 | - | - |
-| Задание 6 | - | - |
-| Задание 7 | - | - |
-| Задание 8 | - | - |
-| Задание 9 | - | - |
-| Задание 10 | - | - |
+| Задание 1 | + | + |
+| Задание 2 | + | + |
+| Задание 3 | + | + |
+| Задание 4 | + | + |
+| Задание 5 | + | + |
+| Задание 6 | + | + |
+| Задание 7 | + | + |
+| Задание 8 | + | + |
+| Задание 9 | + | + |
+| Задание 10 | + | + |
 
 знак "+" - задание выполнено; знак "-" - задание не выполнено;
 
@@ -22,186 +20,330 @@
 - к.э.н., доцент Панов М.А.
 
 
-## Лабораторная работа №
+## Лабораторная работа №5
 
-### 1)
-
-```python
-
-```
-
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/lab/ex1.png)
-
-### 2)
-
+### 1) Друзья предложили вам поиграть в игру “найди отличия и убери повторения (версия для программистов)”. Суть игры состоит в том, что на вход программы поступает два множества, а ваша задача вывести все элементы первого, которых нет во втором.
 
 ```python
-
+set_1 = {"white", "black", "red", "pink"}
+set_2 = {"red", "green", "blue", "red"}
+print(set_1 - set_2)
 ```
 
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/lab/ex2.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_5/pic/lab/ex1.png)
 
-### 3)
+### 2) Напишите две одинаковые программы, только одна будет использовать set(), а вторая frozenset() и попробуйте к исходному множеству добавить несколько элементов, например, через цикл. 
+
+
 
 
 ```python
+a = set("abcdefu")
+# a = frozenset("abcdefu")
+print(a)
+for i in range(1, 5):
+    a.add(i)
+print(a)
 
 ```
 
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/lab/ex3.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_5/pic/lab/ex2.png)
 
-### 4)
+### 3) На вход в программу поступает список (минимальной длиной 2 символа). Напишите программу, которая будет менять первый и последний элемент списка. P.S. В Python есть прикольное свойство, благодаря которому эту задачу можно решить более красиво, использовав всего 2 сточки кода, если интересно можете самостоятельно найти это решение.
 
 
 ```python
+def replace(inpu_list):
+    # memory = inpu_list[0]
+    # inpu_list[0] = inpu_list[-1]
+    # inpu_list[-1] = memory
+    inpu_list[0], inpu_list[-1] = inpu_list[-1], inpu_list[0]
+    return inpu_list
 
+print(replace([1, 2, 3, 4, 5]))
 ```
 
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/lab/ex4.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_5/pic/lab/ex3.png)
 
-### 5)
+### 4) На вход в программу поступает список (минимальной длиной 10 символов). Напишите программу, которая выводит элементы с индексами от 2 до 6. В программе необходимо использовать “срез”.
 
 
 ```python
-
+a = [12, 54, 32, 57, 843, 2346, 765, 75, 25, 234, 756, 23]
+print(a[2:6])
 ```
 
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/lab/ex5.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_5/pic/lab/ex4.png)
 
-### 6)
+### 5) Иван задумался о поиске «бесполезного» числа, полученного из списка. Суть поиска в следующем: он берет произвольный список чисел, находит самое большое из них, а затем делит его на длину списка. Студент пока не придумал, где может пригодиться подобное значение, но ищет у вас помощи в реализации такой функции useless()
 
 
 ```python
+def useless(lst):
+    return max(lst) / len(lst)
 
+print(useless([3, 5, 7, 3, 33]))
+print(useless([-12.5, 54, 77.3, 0, -36, 98.2, -63, 21.7, 47, -89.6]))
+print(useless([-25.8, 86, 12.5, -56, 73.2, 0, 43, -91.5, 65.9, -7]))
 ```
 
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/lab/ex6.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_5/pic/lab/ex5.png)
 
-### 7)
+### 6) Ребята не могут определится каким супергероем они хотят стать. У них есть случайно составленный список супергероев, и вы должны определить кто из ребят будет каким супергероем. Необходимо использовать разделение списков. 
+
 
 
 ```python
+superheroes = ["superman", "spiderman", "batman"]
 
+nikolay, vasiliy, ivan = superheroes
+print(f"николай - {nikolay}")
+print(f"василий - {vasiliy}")
+print(f"иван - {ivan}")
 ```
 
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/lab/ex7.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_5/pic/lab/ex6.png)
 
-### 8)
+### 7) Вовочка, насмотревшись передачи “Слабое звено” решил написать программу, которая также будет находить самое слабое звено (минимальный элемент) и удалять его, только делать он это хочет не с людьми, а со списком. Помогите Вовочке с реализацией программы. 
+
 
 
 ```python
-
+a = [-25.8, 86, 12.5, -56, 73.2, 0, 43, -91.5, 65.9, -7]
+a.sort()
+print(f"sorted:\n{a}")
+a.pop(0)
+print(f"sorted without minimal element:\n{a}")
 ```
 
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/lab/ex8.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_5/pic/lab/ex7.png)
 
-### 9)
+### 8) Михаил решил создать большой n-мерный список, для этого он случайным образом создал несколько списков, состоящих минимум из 3, а максимум из 10 элементов и поместил их в один большой список. Он также как и Иван не знает зачем ему это сейчас нужно, но надеется на то, что это пригодится ему в будущем.
 
 
 ```python
+from random import randint
 
+def list_maker():
+    a = [randint(1, 100)] * randint(3, 10)
+    return a
+
+if __name__ == "__main__":
+    result = []
+    for _ in range(randint(1, 5)):
+        result.append(list_maker())
+    print(result)
 ```
 
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/lab/ex9.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_5/pic/lab/ex8.png)
 
-### 10)
+### 9) Вы работаете в ресторане и отвечает за статистику покупок, ваша задача сравнить между собой заказы покупателей, которые указаны в разном порядке. Реализуйте функцию superset(), которая принимает 2 множества. Результат работы функции: вывод в консоль одного из сообщений в зависимости от ситуации: 
+1 - «Супермножество не обнаружено» 
+2 – «Объект {X} является чистым супермножеством» 
+3 – «Множества равны» Михаил А. Панов
+
 
 
 ```python
+def superset(set_1, set_2):
+    if set_1 > set_2:
+        print(f"объект {set_1} является чистым супермножеством")
+    elif set_1 == set_2:
+        print("множества равны")
+    elif set_1 < set_2:
+        print(f"объект {set_2} является чистым супермножеством")
+    else:
+        print("супермножество не обнаружено")
 
+
+if __name__ == "__main__":
+    superset({1, 8, 3, 5}, {3, 5})
+    superset({1, 8, 3, 5}, {5, 3, 8, 1})
+    superset({3, 5}, {5, 3, 8, 1})
+    superset({90, 100}, {3, 5})
 ```
 
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/lab/ex10.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_5/pic/lab/ex9.png)
+
+### 10) Предположим, что вам нужно разобрать стопку бумаг, но нужно начать работу с нижней, “переверните стопку”. Вам дан произвольный список. Представьте его в обратном порядке. Программа должна занимать не более двух строк в редакторе кода.
+
+
+```python
+my_list = [2, 5, 8, 3]
+print(my_list[::-1])
+```
+
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_5/pic/lab/ex10.png)
 
 ## Самостоятельная работа №
 
 
-### 1)
+### 1) Ресторан на предприятии ведет учет посещений за неделю при помощи кода работника. У них есть список со всеми посещениями за неделю. 
+Ваша задача почитать: 
+- Сколько было выдано чеков 
+- Сколько разных людей посетило ресторан 
+- Какой работник посетил ресторан больше всех раз 
+Список выданных чеков за неделю: 
+[
+    8734, 2345, 8201, 6621, 9999, 1234, 5678, 8201, 8888, 4321, 3365, 
+    1478, 9865, 5555, 7777, 9998, 1111, 2222, 3333, 4444, 5556, 6666, 
+    5410, 7778, 8889, 4445, 1439, 9604, 8201, 3365, 7502, 3016, 4928, 
+    5837, 8201, 2643, 5017, 9682, 8530, 3250, 7193, 9051, 4506, 1987, 
+    3365, 5410, 7168, 7777, 9865, 5678, 8201, 4445, 3016, 4506, 4506
+]
+
+Результатом выполнения задачи будет: листинг кода, и вывод в консоль, в котором будет указана вся необходимая информация.
 
 
 ```python
+poseshehiya = [
+    8734, 2345, 8201, 6621, 9999, 1234, 5678, 8201, 8888, 4321, 3365, 
+    1478, 9865, 5555, 7777, 9998, 1111, 2222, 3333, 4444, 5556, 6666, 
+    5410, 7778, 8889, 4445, 1439, 9604, 8201, 3365, 7502, 3016, 4928, 
+    5837, 8201, 2643, 5017, 9682, 8530, 3250, 7193, 9051, 4506, 1987, 
+    3365, 5410, 7168, 7777, 9865, 5678, 8201, 4445, 3016, 4506, 4506
+]
 
+print(f"Всего чеков {len(poseshehiya)}")
+workers = set(poseshehiya)
+print(f"уникальных людей: {len(workers)}")
+print(f"ходил чаще всего: {max(workers, key=poseshehiya.count)}")
 ```
 
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/praktika/ex1.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_5/pic/praktika/ex1.png)
 
-### 2)
+### 2) На физкультуре студенты сдавали бег, у преподавателя физкультуры есть список всех результатов, ему нужно узнать 
+
+- Три лучшие результата 
+- Три худшие результата 
+- Все результаты начиная с 10 
+
+Ваша задача помочь ему в этом. 
+
+Список результатов бега: 
+```
+[10.2, 14.8, 19.3, 22.7, 12.5, 33.1, 38.9, 21.6, 26.4, 17.1, 30.2, 35.7, 16.9, 27.8, 24.5, 16.3, 18.7, 31.9, 12.9, 37.4] 
+```
+
+Результатом выполнения задачи будет: листинг кода, и вывод в консоль, в котором будет указана вся необходимая информация. 
 
 
 ```python
+results = [10.2, 14.8, 19.3, 22.7, 12.5, 33.1, 38.9, 21.6, 26.4, 17.1, 30.2, 35.7, 16.9, 27.8, 24.5, 16.3, 18.7, 31.9, 12.9, 37.4]
 
+sorted_results = list(set(results))
+print(f"top 3: {sorted_results[-3:]}")
+print(f"worst 3: {sorted_results[:3]}")
+print(f"start from 10: {results[9:]}")
 ```
 
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/praktika/ex2.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_5/pic/praktika/ex2.png)
 
-### 3)
+### 3) Преподаватель по математике придумал странную задачку. У вас есть три списка с элементами, каждый элемент которых – длина стороны треугольника, ваша задача найти площади двух треугольников, составленные из максимальных и минимальных элементов полученных списков. Результатом выполнения задачи будет: листинг кода, и вывод в консоль, в котором будут указаны два этих значения. 
+
+Три списка: 
+```
+one = [12, 25, 3, 48, 71] 
+two = [5, 18, 40, 62, 98]
+three = [4, 21, 37, 56, 84]
+```
+
 
 
 ```python
+def s_triangle(x, y, z):
+    '''
+    x, y, z - стороны треугольника
 
+    возвращает площадь треугольника по формуле Герона
+    '''
+    p = (x + y + z) / 2
+    s = (p * (p - x) * (p - y) * (p - z)) ** 0.5
+    return s
+
+
+one = [12, 25, 3, 48, 71] 
+two = [5, 18, 40, 62, 98] 
+three = [4, 21, 37, 56, 84]
+
+first_min = [min(one), min(two), min(three)]
+second_max = [max(one), max(two), max(three)]
+
+s_first = s_triangle(first_min[0], first_min[1], first_min[2])
+s_second = s_triangle(second_max[0], second_max[1], second_max[2])
+
+print(f"стороны первого треугольника: {first_min}\nплощадь: {s_first}")
+print(f"стороны второго треугольника: {second_max}\nплощадь: {s_second}")
 ```
 
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/praktika/ex3.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_5/pic/praktika/ex3.png)
 
-### 4)
+### 4) Никто не любит получать плохие оценки, поэтому Борис решил это исправить. Допустим, что все оценки студента за семестр хранятся в одном списке. Ваша задача удалить из этого списка все двойки, а все тройки заменить на четверки. 
+
+Списки оценок (проверить работу программы на всех трех вариантах): 
+```
+[2, 3, 4, 5, 3, 4, 5, 2, 2, 5, 3, 4, 3, 5, 4] 
+[4, 2, 3, 5, 3, 5, 4, 2, 2, 5, 4, 3, 5, 3, 4] 
+[5, 4, 3, 3, 4, 3, 3, 5, 5, 3, 3, 3, 3, 4, 4] 
+```
+
+Результатом выполнения задачи будет: листинг кода, и вывод в консоль, в котором будут три обновленных массива.
 
 
 ```python
+def normalize(array: list):
+    return [i if i != 3 else 4 for i in array if i != 2]
 
+array1 = [2, 3, 4, 5, 3, 4, 5, 2, 2, 5, 3, 4, 3, 5, 4] 
+array2 = [4, 2, 3, 5, 3, 5, 4, 2, 2, 5, 4, 3, 5, 3, 4] 
+array3 = [5, 4, 3, 3, 4, 3, 3, 5, 5, 3, 3, 3, 3, 4, 4]
+
+print(f"first: {array1}\nformatted: {normalize(array1)}\n")
+print(f"second: {array2}\nformatted: {normalize(array2)}\n")
+print(f"third: {array3}\nformatted: {normalize(array3)}\n")
 ```
 
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/praktika/ex4.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_5/pic/praktika/ex4.png)
 
-### 5)
+### 5) Вам предоставлены списки натуральных чисел, из них необходимо сформировать множества. При этом следует соблюдать это правило: если какое-либо число повторяется, то преобразовать его в строку по следующему образцу: например, если число 4 повторяется 3 раза, то в множестве будет следующая запись: само число 4, строка «44», строка «444». 
+
+Множества для теста: 
+
+```
+list_1 = [1, 1, 3, 3, 1] 
+list_2 = [5, 5, 5, 5, 5, 5, 5] 
+list_3 = [2, 2, 1, 2, 2, 5, 6, 7, 1, 3, 2, 2] 
+```
+
+Результаты вывода (порядок может отличаться, поскольку мы работаем 
+с set()): 
+
+```
+{'11', 1, 3, '33', '111'} 
+{5, '5555', '555555', '55555', '555', '55', '5555555'} 
+{'11', 1, 3, 2, 5, 6, '222222', '222', 7, '2222', '22222', '22'} 
+```
 
 
 ```python
+def normilize(array: list):
+    new_array = []
+    array_set = list(set(array))
+    for i in array_set:
+        amount = array.count(i)
+        new_array.append(i)
+        if amount > 1:
+            for j in range(2, amount+1):
+                new_array.append(str(i) * j)
+    return new_array
 
+list_1 = [1, 1, 3, 3, 1] 
+list_2 = [5, 5, 5, 5, 5, 5, 5] 
+list_3 = [2, 2, 1, 2, 2, 5, 6, 7, 1, 3, 2, 2]
+
+print(f"first: {list_1}\nnew: {normilize(list_1)}\n")
+print(f"second: {list_2}\nnew: {normilize(list_2)}\n")
+print(f"third: {list_3}\nnew: {normilize(list_3)}\n")
 ```
 
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/praktika/ex5.png)
-
-### 6)
-
-
-```python
-
-```
-
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/praktika/ex6.png)
-
-### 7)
-
-
-```python
-
-```
-
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/praktika/ex7.png)
-
-### 8)
-
-
-```python
-
-```
-
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/praktika/ex8.png)
-
-### 9)
-
-
-```python
-
-```
-
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/praktika/ex9.png)
-
-### 10)
-
-
-```python
-
-```
-
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/praktika/ex10.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_5/pic/praktika/ex5.png)
