@@ -1,0 +1,51 @@
+class Phone:
+
+    def __init__(self, model_name, price, company, battery_capacity, processor, camera):
+        self.model_name = model_name
+        self.price = price
+        self.company = company
+        self.battery_capacity = battery_capacity
+        self.processor = processor
+        self.camera = camera
+    
+    def print_info(self):
+        print(f"\nmodel name: {self.model_name}\n"
+              f"price: {self.price}\n"
+              f"company: {self.company}\n"
+              f"battery capacity: {self.battery_capacity}\n"
+              f"processor: {self.processor}\n"
+              f"camera: {self.camera}")
+
+class BestCompanyPhone(Phone):
+
+    def __init__(self, model_name, price, company, battery_capacity, processor, camera, best_servies: bool, factory: int):
+        super().__init__(model_name, price, company, battery_capacity, processor, camera)
+        self.best_servies = best_servies
+        self.factory = factory
+    
+    def print_info(self):
+        print(f"\nBestCompanyPhone\n"
+              f"model name: {self.model_name}\n"
+              f"price: {self.price}\n"
+              f"company: {self.company}\n"
+              f"battery capacity: {self.battery_capacity}\n"
+              f"processor: {self.processor}\n"
+              f"camera: {self.camera}\n"
+              f"best servies: {self.best_servies}\n"
+              f"factory number: {self.factory}")
+
+
+
+
+phone = BestCompanyPhone(
+    "new cool phone ultra max pro elete exlusive limited edition milion",
+    9999,
+    "best company",
+    10000,
+    "p10milion",
+    1000,
+    True,
+    1143
+)
+
+phone.print_info()
