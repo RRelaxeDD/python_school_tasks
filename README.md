@@ -51,7 +51,7 @@ my_car = Car("Toyota", "centry")
 my_car.drive()
 ```
 
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/lab/ex2.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_8/pic/lab/ex2.png)
 
 ### 3) Создайте новый класс “ElectricCar” с методом “charge” и атрибутом емкость батареи. Реализуйте его наследование от класса, созданного в первом задании. Заставьте машину поехать, а потом заряжаться. Напишите комментарии для кода, объясняющие его работу. Результатом выполнения задания будет листинг кода с комментариями и получившийся вывод в консоль.
 
@@ -80,7 +80,7 @@ my_car.drive()
 my_car.charge()
 ```
 
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/lab/ex3.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_8/pic/lab/ex3.png)
 
 ### 4) Реализуйте инкапсуляцию для класса, созданного в первом задании. Создайте защищенный атрибут производителя и приватный атрибут модели. Вызовите защищенный атрибут и заставьте машину поехать. Напишите комментарии для кода, объясняющие его работу. Результатом выполнения задания будет листинг кода с комментариями и получившийся вывод в консоль.
 
@@ -99,7 +99,7 @@ print(my_car._model)
 print(my_car.drive())
 ```
 
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/lab/ex4.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_8/pic/lab/ex4.png)
 
 ### 5) Реализуйте полиморфизм создав основной (общий) класс “Shape”, а также еще два класса “Rectangle” и “Circle”. Внутри последних двух классов реализуйте методы для подсчета площади фигуры. После этого создайте массив с фигурами, поместите туда круг и прямоугольник, затем при помощи цикла выведите их площади. Напишите комментарии для кода, объясняющие его работу. Результатом выполнения задания будет листинг кода с комментариями и получившийся вывод в консоль.
 
@@ -131,7 +131,7 @@ for shape in shapes:
     print(shape.area())
 ```
 
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/lab/ex5.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_8/pic/lab/ex5.png)
 
 
 ## Самостоятельная работа №8
@@ -197,7 +197,7 @@ phone.print_info()
 
 ```
 
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/praktika/ex2.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_8/pic/praktika/ex2.png)
 
 ### 3) Самостоятельно реализуйте наследование, продолжая работать с ранее созданным классом. Оно должно отличаться, от того, что указано в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
@@ -254,7 +254,7 @@ phone.print_info()
 
 ```
 
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/praktika/ex3.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_8/pic/praktika/ex3.png)
 
 ### 4) Самостоятельно реализуйте инкапсуляцию, продолжая работать с ранее созданным классом. Она должна отличаться, от того, что указана в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
@@ -293,7 +293,7 @@ print(phone._processor)
 phone.print_info()
 ```
 
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/praktika/ex4.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_8/pic/praktika/ex4.png)
 
 ### 5) Самостоятельно реализуйте полиморфизм. Он должен отличаться, от того, что указан в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
@@ -325,4 +325,4 @@ for i in phones:
     print(i.is_foldable())
 ```
 
-![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/template/pic/praktika/ex5.png)
+![ex1pic](https://github.com/RRelaxeDD/python_school_tasks/blob/theme_8/pic/praktika/ex5.png)
